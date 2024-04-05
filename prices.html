@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="sub-header">
+        <nav>
+			<a href="prices.html"><img class="logo" src="images/prices.png"></a>
+            <a href="index.html">
+               
+            </a>
+				<div class="nav-links" id="navLinks">	
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="prices.html">PRICES</a></li>
+                        <li><a href="customize.html">CUSTOMIZE</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+        </nav>
+    </header>
+
+    <!-- Product List -->
+    <section class="course">
+		<div class="row">
+			<div class="course-col">
+				<img src="Images/product1.jpg" alt="Product 1">
+				<h3>Pacific</h3>
+				<p><span class="original-price">$19.99</span> $9.99</p>
+			</div>
+			<div class="course-col">
+				<img src="Images/product2.jpg" alt="Product 2">
+				<h3>Atlantic</h3>
+				<p>$24.99</p>
+			</div>
+			<div class="course-col">
+				<img src="Images/product3.jpg" alt="Product 3">
+				<h3>Arctic</h3>
+				<p>$29.99</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="course-col">
+				<img src="Images/product4.jpg" alt="Product 4">
+				<h3>Indian</h3>
+				<p><span class="original-price">$14.99</span> $9.99</p>
+			</div>
+			<div class="course-col">
+				<img src="images/p1.png" alt="Product 5">
+				<h3>CUFF LEATHER</h3>
+				<p>$25.99</p>
+			</div>
+			<div class="course-col">
+				<img src="Images/p2.png" alt="Product 6">
+				<h3>BEADED LEATHER</h3>
+				<p><span class="original-price">$39.99</span> $25.99</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="course-col">
+				<img src="Images/p3.png" alt="Product 7">
+				<h3>STUDDED LEATHER</h3>
+				<p>$24.99</p>
+			</div>
+			<div class="course-col">
+				<img src="Images/ball.png" alt="Product 8">
+				<h3>Wide Knot</h3>
+				<p>$14.99</p>
+			</div>
+			<div class="course-col">
+				<img src="Images/base.png" alt="Product 9">
+				<h3>Navy Style</h3>
+				<p><span class="original-price">$22.99</span> $18.99</p>
+			</div>
+		</div>
+    </section>
+	
+    <!-- Footer -->
+    <section class="footer">
+        <div class="about-col">
+            <img src="images/about.jpg" alt="About Image">
+        </div>
+        <h4>About Us</h4>
+        <p>We offer services of the highest quality and trust to our customers.</p>
+        <div class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </section>
+	
+	<!-- Pop-up Modal -->
+	<div id="discountModal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<h2>Black Friday Discount!</h2>
+			<p>Get 20% off on all products this Black Friday!</p>
+		</div>
+	</div>
+
+	
+    <!-- JavaScript for toggle menu -->
+	<script>
+        // Function to display the modal
+        function openModal() {
+            var modal = document.getElementById("discountModal");
+            modal.style.display = "block";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            var modal = document.getElementById("discountModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>

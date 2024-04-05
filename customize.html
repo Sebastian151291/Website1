@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Men's Style Leather Bracelet</title>
+<link rel="stylesheet" href="style3.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images4/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="prices.html">PRICES</a></li>
+                    <li><a href="course.html">CUSTOMIZE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+            <h1>CUSTOMIZE YOUR PRODUCT</h1>
+    </section>
+    
+    
+<!------- about us content -------->
+    
+ <main class="container">
+      <!-- Left Column / Bracelet Image -->
+      <div class="left-column">
+        <img data-image="black" src="images4/black.jpg" alt="">
+        <img data-image="blue" src="images4/blue.jpg" alt="">
+        <img data-image="red" class="active" src="images4/red.jpg" alt="">
+      </div>
+
+      <!-- Right Column -->
+      <div class="right-column">
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Customize your bracelet</span>
+          <h1>Pick different colors</h1>
+          <p>Our comfortable and durable bracelets are now in stock. Order now.</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+          <!-- Product Color -->
+          <div class="product-color">
+            <span>Color</span>
+            <div class="color-choose">
+              <div>
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+              <div>
+                <input data-image="black" type="radio" id="black" name="color" value="black">
+                <label for="black"><span></span></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Material -->
+          <label for="material">Choose a material:</label>
+          <select name="material" id="material">
+            <option value="leather">Leather</option>
+            <option value="plastic">Plastic</option>
+            <option value="leather_imitation">Leather imitation</option>
+            <option value="Premium_leather">Premium leather</option>
+          </select>
+
+          <!-- Product Pricing -->
+          <div class="product-price">
+            <span>20$</span>
+            <a href="#" class="cart-btn">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>We offer services of the highest quality and trust to our customers</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        
+</section>    
+  
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+    
+</body>
+</html>    
